@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Lekcije sa Formularima</title>
+<meta charset="utf-8">
+</head>
+<body>
+<form method="post" action="https://formsubmit.co/ratko000ponjevic@gmail.com">
+<label for="input-ime">Ime:</label>
+<input type="text" name="ime" id="input-ime" required><br/>
+<label for="i-procenat">Procenat:</label>
+<input type="number" name="procenat" id="i-procenat"
+step="0.01" min="0" max="1" value="0.5" required><br>
+
+<label for="i-email">E-mail:</label>
+<input type="email" name="email" id="i-email" required><br>
+<label for="i-telefon">Telefon:</label>
+<input type="phone" name="telefon" id="i-telefon" required><br>
+<label for="i-zaposlen">Zaposlen?</label>
+<input type="checkbox" name="zaposlen" id="i-zaposlen" value="1"><br>
+<label>Obaderite kategoriju:</label><br>
+<input type="radio" name="kategorija" value="1" checked>Kategorija 1<br>
+<input type="radio" name="kategorija" value="1">Kategorija 2<br>
+<input type="radio" name="kategorija" value="1">Kategorija 3<br>
+<input type="radio" name="kategorija" value="1">Kategorija 4<br>
+<input type="radio" name="kategorija" value="1">Kategorija 5<br>
+<label for="i-adresa">Adresa:</label>
+<textarea rows="6" name="Adresa" id="i-adresa" required></textarea><br>
+<label for="i-drzava">Država: </label>
+<select name="Država" id="i-drzava">
+<option value="0001">Srbija</option>
+<option value="0002">Bosna i Hercegovina</option>
+<option value="0003">Hrvatska</option>
+<option value="0004">Slovenija</option>
+<option value="0005">Crna Gora</option>
+<option value="0006">Mkedonija</option>
+</select><br>
+<label for="i-drzava2">Država 2:</label>
+<input type="text" list="spisak-drzava" name="drzava2" id="i-drzava2" required>
+<datalist id="spisak-drzava">
+<option value="Srbija">
+<option value="Crna Gora">
+<option value="Hrvatska">
+<option value="Slovenija">
+<option value="Bosna I Hercegovina">
+<option value="Makedonija">
+</datalist><br>
+<label for="i-opseg">Opseg:</label>
+<input type="range" name="opseg" id="i-opseg"
+min="10" max="60" step="5"><br><br>
+
+<button type="submit">Pošalji</button>
+<button type="reset">Poništi</button>
+</form> 
+
+</body>
+
+
+</html>
